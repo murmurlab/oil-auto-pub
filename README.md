@@ -9,6 +9,8 @@ yazicidan veya dijital cikti almaya yarar. ayrica sablonlari filtreleyerek arama
 secenegi vardir. Ciktiyi yazicidan alabilir yazici icin cikti boyutu ve yazici
 secerek ayar kaydedebilirsiniz
 
+![](./offline_auth.drawio.svg)
+
 ### 1. Giriş
 
 `oil-auto`, fatura templatelerini yönetmenize ve bu templateler uzerinden
