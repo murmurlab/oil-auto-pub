@@ -1,0 +1,47 @@
+{
+  "name": "murmuroil",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron-forge start",
+    "test": "cat index2.js > index.js && electron .",
+    "obfus": "javascript-obfuscator ./index2.js --config ./obfus.json && rm index.js && mv index2-obfuscated.js index.js && npm test",
+    "package": "electron-forge package",
+    "make": "electron-forge make",
+    "package-win": "npx electron-packager . --tmpdir=/home/mehmetap/.tmp --platform=win32 --arch=ia32,x64 --prune=true --out=../release-builds --ignore=./node_modules/.bin/ --version-string.CompanyName=murmurlab --version-string.FileDescription=oil-auto --version-string.ProductName=\"oil-auto\" --overwrite",
+    "package-osx": "npx electron-packager . --tmpdir=/home/mehmetap/.tmp --platform=darwin --arch=x64 --prune=true --out=../release-builds --ignore=./node_modules/.bin/ --version-string.CompanyName=murmurlab --version-string.FileDescription=oil-auto --version-string.ProductName=\"oil-auto\" --overwrite",
+    "package-linux": "npx electron-packager . --tmpdir=/home/mehmetap/.tmp --platform=linux --arch=x64 --prune=true --out=../release-builds --ignore=./node_modules/.bin/ --version-string.CompanyName=murmurlab --version-string.FileDescription=oil-auto --version-string.ProductName=\"oil-auto\" --overwrite",
+    "compz": "cd ../release-builds && find . -maxdepth 1 -type d | tail -n+2 | xargs -I {} tar -czf {}.tar.gz {}"
+  },
+  "type": "module",
+  "author": "murmurlab",
+  "license": "ISC",
+  "devDependencies": {
+    "@electron-forge/cli": "^7.3.0",
+    "@electron-forge/maker-deb": "^7.3.0",
+    "@electron-forge/maker-rpm": "^7.3.0",
+    "@electron-forge/maker-squirrel": "^7.3.0",
+    "@electron-forge/maker-zip": "^7.3.0",
+    "@electron-forge/plugin-auto-unpack-natives": "^7.3.0",
+    "electron": "29.1.0",
+    "electron-compile": "^3.3.6",
+    "electron-squirrel-startup": "^1.0.0",
+    "javascript-obfuscator": "^4.1.0"
+  },
+  "build": {
+    "appId": "com.example.electron-boilerplate",
+    "directories": {
+      "buildResources": "node_modules/.bin/"
+    },
+    "publish": null
+  },
+  "dependencies": {
+    "appdata-path": "^1.0.0",
+    "hwid2": "^1.0.1",
+    "is-online": "^10.0.0",
+    "npm": "^10.5.0",
+    "npm-run-path": "^5.3.0",
+    "npx": "^3.0.0"
+  }
+}

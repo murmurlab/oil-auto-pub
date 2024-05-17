@@ -1,0 +1,391 @@
+body, html{
+    background: rgba(255, 255, 255, 0.158);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+* {
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+.help-menu {
+    overflow: scroll;
+    z-index: 1;
+    position: absolute;
+    width: 25%;
+    min-width: 25rem;
+    height: 75%;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background: yellow;
+    display: none;
+    border: 0.3rem #002d69 dashed ;
+}
+
+.p-1 {
+    margin: 3%;
+}
+
+.help {
+    overflow-wrap: anywhere;
+    height: 100%;
+    margin-left: auto;
+    background-color: yellow;
+    color: red;
+    font-size: large;
+    flex: 0.5;
+    min-width: 0;
+}
+
+.sel-1 {
+    min-width: 50%;
+    /* width: 25%; */
+    flex: 1;
+    font-size: large;
+    min-height: 100%;
+}
+
+.badn {
+    overflow-wrap: anywhere;
+    height: 100%;
+    margin-left: auto;
+    background-color: yellow;
+    color: red;
+    font-size: large;
+    /* margin: 3%; */
+    min-width: 0;
+}
+
+.flex-badn {
+    flex: 1;
+}
+
+.ad {
+    scrollbar-width: thin;
+    width: 100%;
+    font-size: large;
+    text-align: center;
+    flex: 1;
+    overflow: scroll;
+    overflow-x: auto;
+    overflow-wrap: anywhere;
+    overflow-x: auto;
+    height: 100%;
+}
+
+.date-time {
+    min-height: 2rem;
+}
+
+.inp1 {
+    /* min-height: 2rem; */
+    margin: 2% 0% 0% 0% ;
+    font-size: x-large;
+}
+
+.inp-check {
+    margin: 1% 1% 0 1%;
+    padding: 2%;
+    /* width: 100%; */
+    /* max-width: 100%; */
+}
+
+.opt1 {
+    min-width: 0;
+    /* width: 25%; */
+    flex: 0.5;
+    font-size: large;
+}
+
+.main {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    background: #878787;
+}
+
+.form {
+    flex: none;
+    display: flex;
+    flex-direction: column;
+    /* width: 25%; */
+    height: 100%;
+    background: rgb(136, 190, 28);
+    
+}
+
+textarea {
+    scrollbar-width: thin;
+}
+
+.table {
+    scrollbar-width: thin;
+    width: 75%;
+    height: 100%;
+    background: rgb(163, 146, 92);
+    overflow: scroll;
+    padding: 0% 0.4%;
+}
+
+.form-t {
+    scrollbar-width: thin;
+    /* padding: 0 1% 0 1%; */
+    overflow-wrap: anywhere;
+    display: flex;
+    flex-direction: column;
+    max-height: 100%;
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    background: rgb(132, 132, 132);
+}
+
+#baslik, #alt-baslik {
+    resize: vertical;
+    field-sizing: content;
+    max-height: 35%;
+    flex: none;
+}
+
+.hide {
+    display: none !important;
+}
+
+.form-input-control {
+    display: flex;
+    background: #878787;
+    /* flex: 0.5; */
+    height: 3rem;
+}
+
+.ctrl-pan {
+    display: flex;
+    background: #878787;
+    /* flex: 0.5; */
+    height: min-content;
+}
+
+.bot {
+    /* top: 100%; */
+    bottom: 0;
+    position: sticky;
+    width: 100%;
+}
+
+.badn-div {
+    display: flex;
+    background: #878787;
+    /* flex: 0.5; */
+    height: 3rem;
+    padding: 2%;
+}
+
+.btn-1 {
+    flex: 1;
+    height: 100%;
+    font-size: x-large;
+}
+
+.field {
+    display: flex;
+}
+
+.label {
+    font-size: x-large;
+    text-align: center;
+    width: 100%;
+    align-content: center;
+}
+
+.switch {
+    width: 2rem;
+    height: 2rem;
+}
+
+.form-control {
+    width: 100%;
+    height: 4rem;
+    flex: none;
+    display: flex;
+    margin-top: auto;
+    background: rgb(163, 92, 92);
+}
+
+.row {
+    display: flex;
+    background: beige;
+    border: 0.0rem solid rgb(0, 0, 0);
+    /* box-sizing: border-box; */
+    margin: 0.3% 0;
+    width: 100%;
+    min-height: 2rem;
+    height: 2rem;
+}
+
+.text-1 {
+    padding: 3%;
+    width: 100%;
+    overflow: scroll;
+    overflow-y: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    /* scrollbar-width: thin; */
+}
+
+::-webkit-scrollbar {
+    /* width: 2em; */
+    height: 0.3em
+}
+::-webkit-scrollbar-track-piece {
+    /* padding: 10px; */
+    background: #ffffff
+}
+::-webkit-scrollbar-thumb {
+    background: #bcbcbc;
+}
+
+.text-2 {
+    width: 100%;
+    /* overflow:auto; */
+    text-align: center;
+}
+
+.t-title {
+    background: rgb(196, 67, 110);
+    position: sticky;
+    box-sizing: border-box;
+    height: 2.8rem;
+    top: 0;
+}
+
+.duplex {
+    display: flex;
+}
+
+.lefting {
+    width: 100%;
+}
+
+.center-1 {
+    text-align: center;
+}
+
+#price2-content {
+    /* font-size: large; */
+}
+
+.bold-1 {
+    font-weight: bolder;
+}
+
+.no-wrap {
+    white-space: nowrap;
+}
+
+.footer {
+    font-size: medium;
+    white-space: pre-line;
+    text-align: center;
+
+    font-weight: lighter;
+}
+
+#quadrata-code {
+    /* font-size: 10px;
+    font-family: monospace;
+    white-space: pre;
+    font-weight: lighter; */
+    width: max-content;
+    left: 50%;
+    transform: translateX(-50%);
+    position: relative;
+}
+
+.h-1 {
+    text-align: center;
+}
+
+#num {
+    font-size: large;
+    text-align: center;
+    font-weight: bold;
+}
+
+.preview {
+    overflow: scroll;
+    scrollbar-width: none;
+    /* width: 30%; */
+    max-width: 215px;
+    min-width: 215px;
+    min-height: 800px;
+    max-height: 700px;
+    display: flex;
+    background: #ffffff;
+    padding: 10px 20px 0 20px;
+}
+
+.preview * {
+    font-size: x-small;
+}
+
+.baslik {
+    padding: 0 5% 0 5%;
+    /* font-size: medium; */
+    white-space: pre-line;
+    text-align: center;
+}
+
+.form-panel {
+    width: 25%;
+    box-sizing: border-box;
+    border: 0.2rem rgb(121, 121, 121) solid;
+}
+
+.t-filter {
+    background: rgb(255, 255, 255);
+    position: sticky;
+    top: 2.8rem;
+}
+
+.inp-2 {
+    width: 100%;
+    height: 90%;
+    font-size: large;
+}
+.inp-2::placeholder {
+    text-align: center;
+}
+
+.column {
+    overflow: hidden;
+    height: 100%;
+    flex: 1;
+    border: 0.05rem solid rgb(0, 0, 0);
+
+    display: flex;
+    align-items: center;    
+    
+    font-size: large;
+    /* text-align: center; */
+}
+
+.save {
+    background: greenyellow;
+}
+
+.del {
+    background: red;
+}
+
+.reset {
+    background: yellow;
+}
+
+.view {
+    background: rgb(88 173 223);
+}

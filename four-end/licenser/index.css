@@ -1,0 +1,36 @@
+body {
+    background: rgb(103, 103, 103);
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    /* max-width: fit-content; */
+    width: 100%;
+    padding: 0% 0% ;
+    margin: 0% 0%;
+
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#info {
+    text-align: center;
+    width: 100%;
+}
+
+.div {
+    width: 100%;
+    padding: 0% 4% ;
+}
+
+.visi {
+    visibility: hidden;
+    /* max-width: 100vw; */
+
+    width: 100%;
+    /* border-width: 0; */
+    text-align: center;
+    font-size: xx-large;
+}

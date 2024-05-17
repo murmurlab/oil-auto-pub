@@ -1,0 +1,352 @@
+<!--index.html-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'"> -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src *;
+   img-src * 'self' data: https:; script-src 'self' 'unsafe-inline' 'unsafe-eval' *;
+   style-src  'self' 'unsafe-inline' *"> -->
+    <title>fiskes.exe</title>
+    <link rel="stylesheet" href="index.css">
+    <script defer src="./libs/davidshimjs-qrcodejs-04f46c6/qrcode.js"></script>
+    <!-- <script defer src="./libs/dom-to-image.min.js"></script> -->
+    <!-- <script defer src="./libs/html-to-image.js"></script> -->
+    <script defer  src="./libs/jspdf.umd.min.js"></script>
+    <script defer src="./libs/html2canvas.js"></script>
+    <script defer type="module" src="index.js"></script>
+    <!-- <style src="index.css"></style> -->
+    <link rel="stylesheet" href="./index.css">
+</head>
+
+<body>
+    <div id="help-menu" class="help-menu">
+        <p class="p-1">
+        <div class="row t-title">
+            <div class="column">
+                <span class="text-1">baslik</span>
+            </div>
+            <div class="column">
+                <span class="text-1">kasa turu</span>
+            </div>
+            <div class="column">
+                <span class="text-1">logo</span>
+            </div>
+            <div class="column">
+                <span class="text-1">vergi no</span>
+            </div>
+            <div class="column">
+                <span class="text-1">kasa harfi</span>
+            </div>
+            <div class="column">
+                <span class="text-1">kasa no</span>
+            </div>
+            <div class="column">
+                <span class="text-1">yakit kodu</span>
+            </div>
+            <div class="column">
+                <span class="text-1">bosluk</span>
+            </div>
+            <div class="column">
+                <span class="text-1">alt baslik</span>
+            </div>
+            <div class="column">
+                <span class="text-1">sablon</span>
+            </div>
+            <div class="column">
+                <span class="text-1">bolge</span>
+            </div>
+        </div>
+
+        - musteri eklemek icin yukaridaki gibi gozuken liste basligindaki herhangi bir yere tikladiktan sonra formu
+        kaydedin
+        <br>
+        </p>
+        <p class="p-1">
+            - musteri eklemek icin yukaridaki gibi gozuken liste basligindaki herhangi bir yere tikladiktan sonra formu
+            kaydedin
+            <br>
+        </p>
+        <br>
+        <h1 class="h-1">
+            settings
+        </h1>
+        <div class="ctrl-pan">
+            <select id="prnsel" class="sel-1" name="form-select" selectedindex="1">
+                <optgroup id="printers" label="Please select printer">
+                    <!-- <option value="1">baslik</option> -->
+                </optgroup>
+            </select>
+            <button class="badn" id="">SET PRINTER</button>
+        </div>
+        <div class="ctrl-pan">
+            <select id="sizsel" class="sel-1" name="form-select" selectedindex="1">
+                <optgroup id="sizes" label="Please select sizes">
+                    <!-- <option value="1">baslik</option> -->
+                </optgroup>
+            </select>
+            <button class="badn" id="">SET PRINTER</button>
+        </div>
+
+        <br>
+        <hr>
+        <div class="bot">
+            <div class="form-input-control">
+                <span class="ad">
+                    oil-auto-1.0.0_a0
+                    <br>
+                    <a href="http://murmurlab.github.io/site/client/main.html" id="mur">murmurlab</a>
+                </span>
+            </div>
+            <div class="badn-div ">
+                <button class="badn flex-badn" id="">BUTON</button>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+
+        <div class="form form-panel">
+            <div class="form-input-control">
+                <select class="opt1" name="form-select" id="form-type" selectedindex="1">
+                    <optgroup label="Please select form">
+                        <option value="1">baslik</option>
+                        <option value="2">fis yaz</option>
+                    </optgroup>
+                </select>
+                <span class="ad">
+                    oil-auto-1.0.0_a0
+                    <br>
+                    <a href="http://murmurlab.github.io/site/client/main.html" id="mur">murmurlab</a>
+                </span>
+                <button class="help" id="help">YARDIM</button>
+            </div>
+            <div class="form-t" id="form-1">
+                <textarea class="heades inp1 inp-check" id="baslik" placeholder="baslik" cols="30" rows="1"></textarea>
+                <select class="heades inp1 inp-check" id="kasa-select">
+                    <option value="1">profilo</option>
+                    <option value="1">bosh</option>
+                    <option value="1">bash</option>
+                    <option value="1">fakir</option>
+                    <option value="1">arcelik</option>
+                    <option value="1">vestel</option>
+                </select>
+                <select class="heades inp1 inp-check" id="logo-select">
+                    <option value="1">shell</option>
+                    <option value="1">lukoil</option>
+                    <option value="1">murmuroil</option>
+                    <option value="1">tp</option>
+                    <option value="1">petrol ofisi</option>
+                    <option value="1">opet</option>
+                    <option value="1">total</option>
+                    <option value="1">go</option>
+                </select>
+                <input id="vergi" class="heades inp1 inp-check" placeholder="vergi no" type="number">
+                <input class="heades inp1 inp-check" placeholder="kasa harfi" type="text">
+                <input class="heades inp1 inp-check" placeholder="kasa no" type="number">
+                <input class="heades inp1 inp-check" placeholder="yakit kodu" type="text">
+                <textarea class="heades inp1 inp-check" id="alt-baslik" placeholder="alt-baslik" cols="30"
+                    rows="1"></textarea>
+                <input class="heades inp1 inp-check" placeholder="bolge" type="text">
+                <input class="heades inp1 inp-check" placeholder="satir bosluk" type="number">
+                <div id="formcntl" class="form-control">
+                    <!-- <button class="btn-1">yazdir</button>
+                    <button class="btn-1">onizle</button> -->
+                    <button id="save" class="btn-1 save">save</button>
+                    <button id="reset" class="btn-1 reset">reset</button>
+                    <button id="del" class="btn-1 del">del</button>
+                </div>
+            </div>
+            <div class="form-t hide" id="form-2">
+                <div id="tcnomu" class="field">
+                    <input class="switch" type="checkbox">
+                    <div class="label">tc ile fis yaz</div>
+                </div>
+                <input id="fis-date" class="fishes inp1 inp-check date-time" type="datetime-local">
+                <input id="fis-no" class="fishes inp1 inp-check" type="text" placeholder="fis no">
+                <input id="fis-eku" class="fishes inp1 inp-check" type="text" placeholder="eku no">
+                <input id="fis-z" class="fishes inp1 inp-check" type="text" placeholder="z no">
+                <input id="fis-pomp" class="fishes inp1 inp-check" type="text" placeholder="pompa no">
+                <input id="fis-pistol" class="fishes inp1 inp-check" type="text" placeholder="tabanca no">
+                <input id="fis-plaka" class="fishes inp1 inp-check" type="text" placeholder="plaka">
+                <input id="fis-tc" class="fishes inp1 inp-check hide" type="text" placeholder="tc no">
+                <input id="fis-vendor" class="fishes inp1 inp-check hide" type="text" placeholder="firma ismi">
+                <input id="fis-type" class="fishes inp1 inp-check" type="text" placeholder="yakit turu">
+                <input id="fis-litre" class="fishes inp1 inp-check" type="text" placeholder="litre">
+                <input id="fis-fiyat" class="fishes inp1 inp-check" type="text" placeholder="birim fiyat">
+                <input id="fis-total" disabled class="fishes inp1 inp-check" type="text" placeholder="toplam">
+
+                <div id="formcntl" class="form-control">
+                    <!-- <button class="btn-1">yazdir</button>
+                    <button class="btn-1">onizle</button> -->
+                    <button id="print" class="btn-1 save">print</button>
+                    <button id="preview" class="btn-1 view">preview</button>
+                    <button id="reset-2" class="btn-1 del">reset</button>
+                </div>
+            </div>
+
+        </div>
+        <div id="preview-panel" class="form hide preview">
+            <div id="baslik-content" class="baslik">
+
+            </div>
+            <br>
+            <div class="duplex">
+                <div id="date-content" class="lefting">
+                    01-03-2024
+                </div>
+                <div id="time-content">
+                    11:00
+                </div>
+            </div>
+            <div class="duplex">
+                <div>
+                    FIS NO: <label id="num-content">1111</label>
+                </div>
+            </div>
+            <br>
+            <div id="plaka" class="center-1 bold-1">
+                44 ab 314
+            </div>
+            <br>
+            <div id="tckn" class="hide">
+                VKN/TCKN: <label id="num-content2">1111</label>
+            </div>
+            <div id="vendor" class="hide">
+                lukoil
+            </div>
+            <div id="price-content">
+                1,000 LT X 111000,00
+            </div>
+            <div class="duplex">
+                <div id="type" class="lefting">
+                    1 %20
+                </div>
+                <div id="price2-content">
+                    *111.00
+                </div>
+            </div>
+            <div class="discriminator">
+                --------------------------
+            </div>
+            <div class="duplex bold-1">
+                <div class="lefting">
+                    TOPKDV
+                </div>
+                <div id="total-kdv">
+                    *18.50
+                </div>
+            </div>
+            <div class="duplex bold-1">
+                <div class="lefting">
+                    TOPLAM
+                </div>
+                <div id="total-price">
+                    *111.00
+                </div>
+            </div>
+            <br>
+            <div class="duplex">
+                <div class="lefting">
+                    NAKIT
+                </div>
+                <div id="cash">
+                    *111.00
+                </div>
+            </div>
+            <div id="footer" class="footer">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent euismod nibh vel interdum
+                pellentesque.
+            </div>
+            <div class="qr">
+                <div id="quadrata-code"></div>
+            </div>
+            <div class="duplex">
+                <div class="lefting">
+                    EKU NO: <label id="ekuno">1</label>
+                </div>
+                <div class="no-wrap">
+                    Z NO: <label id="zno">0011</label>
+                </div>
+            </div>
+            <div id="unhumanreadablecode" class="unhumanreadablecode center-1">
+                €AU 0000002345
+            </div>
+        </div>
+        <div id="table" class="table">
+
+            <div id="t-title" class="row t-title">
+                <div class="column">
+                    <span class="text-2">baslik</span>
+                </div>
+                <div class="column">
+                    <span class="text-2">kasa turu</span>
+                </div>
+                <div class="column">
+                    <span class="text-2">logo</span>
+                </div>
+                <div class="column">
+                    <span class="text-2">vergi no</span>
+                </div>
+                <div class="column">
+                    <span class="text-2">kasa harfi</span>
+                </div>
+                <div class="column">
+                    <span class="text-2">kasa no</span>
+                </div>
+                <div class="column">
+                    <span class="text-2">yakit kodu</span>
+                </div>
+                <div class="column">
+                    <span class="text-2">alt baslik</span>
+                </div>
+                <div class="column">
+                    <span class="text-2">bolge</span>
+                </div>
+                <div class="column">
+                    <span class="text-2">bosluk (id)</span>
+                </div>
+            </div>
+
+            <div id="filitre" class="row t-filter">
+                <div class="column">
+                    <input type="text" placeholder="baslik" class="inp-2">
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="kasa-turu" class="inp-2">
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="logo" class="inp-2">
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="vergi no" class="inp-2">
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="kasa harfi" class="inp-2">
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="kasa no" class="inp-2">
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="yakit kodu" class="inp-2">
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="alt baslik" class="inp-2">
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="bolge" class="inp-2">
+                </div>
+                <div class="column">
+                    <input type="text" placeholder="bosluk (id)" class="inp-2">
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- You can also require other files to run in this process -->
+    <!-- <script src="./renderer.js"></script> -->
+</body>
+
+</html>
