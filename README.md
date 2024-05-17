@@ -18,7 +18,7 @@ yönlendirilirsiniz. Programi kullanmak icin bir lisans
 anahtari girmeniz gerekmektedir. Lisans anahtarinizi girdikten sonra, programi
 kullanmaya başlayabilirsiniz.
 
-![](./ss/licenser.png){ width=50% }
+![](./ss/licenser.png)
 
 ### 2. Uygulama Arayüzü
 
@@ -29,7 +29,7 @@ Uygulama arayüzü aşağıdaki bölümlerden oluşmaktadır:
 * Yardım menüsü, uygulamayı kullanma hakkında bir kılavuza erişim sağlar.
 Yaziciyi ve cikti boyutunu ayarlamak icin ayarlar bulunur.
 
-![](./ss/preferences_help_ui.png){ width=75% }
+![](./ss/preferences_help_ui.png)
 
 * Form Alanı: "Baslik" ve "Fiş Yaz" olmak üzere iki form içerir.
   * Baslik: sablon kaydetmeniz icin her fatura keseceginizde kalmasi gereken
@@ -37,8 +37,8 @@ Yaziciyi ve cikti boyutunu ayarlamak icin ayarlar bulunur.
   * Fis Yaz: kaydedilen sablon uzerinden degisken verileri girerek onizleme,
   sifirlama ve fisi yazdirma yapabilirsiniz.
 
-![](./ss/baslik_blur_nonselect.png){ width=75% }
-![](./ss/fis_blur_nonselect.png){ width=75% }
+![](./ss/baslik_blur_nonselect.png)
+![](./ss/fis_blur_nonselect.png)
 
 **Tablo Alanı:**
 
@@ -46,15 +46,15 @@ Yaziciyi ve cikti boyutunu ayarlamak icin ayarlar bulunur.
 sutununa filitreyi uygulayarak gösteren bir tablo.
 
 *_fotografta yeni sablon eklemek icin tablo basligina tiklanmis durumda_
-![](./ss/new_baslik.png){ width=75% }
+![](./ss/new_baslik.png)
 
 **Önizleme Paneli:**
 
 * Doğru terimler ve alan adları çevirileri dahil olmak üzere, oluşturulan raporu
 veya fişi yazdırmadan önce qr ile önizlemenizi sağlar.
 
-![](./ss/fis_preview.png){ width=75% }
-![](./ss/baslik_bot_preview.png){ width=75% }
+![](./ss/fis_preview.png)
+![](./ss/baslik_bot_preview.png)
 
 ### 3. Formlar ve İşlevler
 
@@ -78,10 +78,10 @@ veya fişi yazdırmadan önce qr ile önizlemenizi sağlar.
     * **Sıfırla:** Sablonun tüm giriş alanlarını temizler.
     * **Sil:** Sablonu siler.
 
-![](./ss/baslik_blur_nonselect.png){ width=75% }
-![](./ss/new_baslik.png){ width=75% }
-![](./ss/baslik_top.png){ width=75% }
-![](./ss/baslik_bot.png){ width=75% }
+![](./ss/baslik_blur_nonselect.png)
+![](./ss/new_baslik.png)
+![](./ss/baslik_top.png)
+![](./ss/baslik_bot.png)
 #### 3.2 Fiş Yaz Formu
 
 * **Amaç:** Bu formda, secilen sablon icin degiskenler girilir ve fiş oluşturur.
@@ -108,10 +108,10 @@ veya fişi yazdırmadan önce qr ile önizlemenizi sağlar.
     ve yazdırır.
     * **Önizleme:** Yazdırmadan önce oluşturulan fişin önizlemesini gösterir.
     * **Sıfırla:** Formdaki tüm giriş alanlarını temizler.
-![](./ss/fis_blur_nonselect.png){ width=75% }
-![](./ss/fis_empty.png){ width=75% }
-![](./ss/fis_filled.png){ width=75% }
-![](./ss/fis_preview.png){ width=75% }
+![](./ss/fis_blur_nonselect.png)
+![](./ss/fis_empty.png)
+![](./ss/fis_filled.png)
+![](./ss/fis_preview.png)
 
 
 #### 4.1 Konfigürasyonları ve Raporları Depolama
