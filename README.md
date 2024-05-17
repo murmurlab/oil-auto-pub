@@ -22,7 +22,35 @@ kullanmaya başlayabilirsiniz.
 
 ![](./ss/licenser.png)
 
-### 2. Uygulama Arayüzü
+### 2. Kullanilan Teknolojiler
+
+* IndexedDB
+* jspdf
+* qrcodejs
+* html2canvas
+* electron
+* hwid2 (for license)
+* powershell, ghostscript, cmd (for print service)
+
+### 3. Lisans Teknolojisi
+* Uygulama, lisans doğrulama işlemleri için bir hmacsha256 ile hashlenen HWID tabanlı lisanslama ve sistemine sahiptir.
+* Ilk calistirildiginda, uygulama bir lisans dosyasi olusturur ve bu dosyayi
+  sunucuya gonderir. Sunucu, bunu dogrulayarak bir lisans anahtari olusturur
+  ve uygulamaya geri gonderir. Uygulama, bu anahtari kullanarak lisans kaydeder ve lisanslama islemini tamamlar.
+* Kopya lisanslama veya multiple device lisanslama korumasi var.
+
+### 4. Kurulum
+
+* Uygulamayı çalıştırmak için, uygulama dosyalarını indirin ve
+`npm install` komutunu çalıştırın.
+* Uygulamayı başlatmak için `npm start` yada `npm test` komutunu
+çalıştırın.
+
+### 5. Dağıtım
+
+* Uygulamayı dağıtmak için, uygulama dosyalarını indirin ve `npm run package-<win/osx/linux>` komutunu çalıştırın.
+
+### 6. Uygulama Arayüzü
 
 Uygulama arayüzü aşağıdaki bölümlerden oluşmaktadır:
 
@@ -58,9 +86,9 @@ veya fişi yazdırmadan önce qr ile önizlemenizi sağlar.
 ![](./ss/fis_preview.png)
 ![](./ss/baslik_bot_preview.png)
 
-### 3. Formlar ve İşlevler
+### 7. Formlar ve İşlevler
 
-#### 3.1 Yazdır Formu
+#### 7.1 Yazdır Formu
 
 * **Amaç:** Bu form, uygulama için aşağıdakiler dahil olmak üzere konfigürasyonlar ayarlamaya olanak sağlar:
     * Doğru terimler ve alan adları çevrilmiş olarak değişkenler için yer tutucular içeren başlık ve dipnot metni.
@@ -84,7 +112,7 @@ veya fişi yazdırmadan önce qr ile önizlemenizi sağlar.
 ![](./ss/new_baslik.png)
 ![](./ss/baslik_top.png)
 ![](./ss/baslik_bot.png)
-#### 3.2 Fiş Yaz Formu
+#### 7.2 Fiş Yaz Formu
 
 * **Amaç:** Bu formda, secilen sablon icin degiskenler girilir ve fiş oluşturur.
     * İşlem tarihi ve saati
@@ -116,42 +144,14 @@ veya fişi yazdırmadan önce qr ile önizlemenizi sağlar.
 ![](./ss/fis_preview.png)
 
 
-#### 4.1 Konfigürasyonları ve Raporları Depolama
+#### 8.1 Konfigürasyonları ve Raporları Depolama
 
 * Uygulama, girilen sablonlari ve oluşturulan raporları depolar
 * Bu kaydedilmiş girdilere tablo alanı aracılığıyla erişebilir ve bunları yönetebilirsiniz.
 * Tablodaki her giriş, konfigürasyon veya rapor hakkındaki ayrıntıları icerir.
 
-### 5. Ek Özellikler
+### 9. Ek Özellikler
 
 * **Gerçek zamanlı çıktı önizlemesi:** Uygulama, formlara veri girdikçe, doğru terimler ve alan adları çevirileri ile oluşturulan raporun veya fişin önizlemesini görüntüler.
 * **Klavye kısayolları:** Yazdırma (Ctrl+P) ve önizleme (Ctrl+E) gibi çeşitli işlemler için klavye kısayollarını kullanabilirsiniz.
 * **QR kod oluşturma:** Uygulama, mobil tarama ve veri aktarımı için kullanılabilecek form veri bilgilerini kodlayan bir QR kod oluşturur.
-
-### 6. Kullanilan Teknolojiler
-
-* IndexedDB
-* jspdf
-* qrcodejs
-* html2canvas
-* electron
-* hwid2 (for license)
-* powershell, ghostscript, cmd (for print service)
-
-### 7. Lisans Teknolojisi
-* Uygulama, lisans doğrulama işlemleri için bir hmacsha256 ile hashlenen HWID tabanlı lisanslama ve sistemine sahiptir.
-* Ilk calistirildiginda, uygulama bir lisans dosyasi olusturur ve bu dosyayi
-  sunucuya gonderir. Sunucu, bunu dogrulayarak bir lisans anahtari olusturur
-  ve uygulamaya geri gonderir. Uygulama, bu anahtari kullanarak lisans kaydeder ve lisanslama islemini tamamlar.
-* Kopya lisanslama veya multiple device lisanslama korumasi var.
-
-### 8. Kurulum
-
-* Uygulamayı çalıştırmak için, uygulama dosyalarını indirin ve
-`npm install` komutunu çalıştırın.
-* Uygulamayı başlatmak için `npm start` yada `npm test` komutunu
-çalıştırın.
-
-### 9. Dağıtım
-
-* Uygulamayı dağıtmak için, uygulama dosyalarını indirin ve `npm run package-<win/osx/linux>` komutunu çalıştırın.
